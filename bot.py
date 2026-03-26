@@ -1,8 +1,8 @@
+import os
+TOKEN = os.getenv("TOKEN")
+
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
-
-import os
-TOKEN = os.getenv("8761303931:AAGf_jiyabgJbzlUCZd0qdRfR6SLpWwKb7A")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Привет! Я твой первый бот!")
